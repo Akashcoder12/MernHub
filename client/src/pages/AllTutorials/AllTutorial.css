@@ -1,34 +1,71 @@
-.tt-cardList{
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     width: 100%;
-     background-color:greenyellow;
+/* Tutorials container */
+.tt-cardList {
+  background-color: #F8FAFC; /* Soft off-white */
+  padding: 30px 20px;
+  min-height: 100vh;
+  font-family: 'Inter', 'Roboto', sans-serif;
+  color: #1E293B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.tt-cards{
-     padding:5px;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     background-color:honeydew;
-     margin: 10px 0;
-     border-radius: 10px;
-     box-shadow:0 2px 4px rgba(0,0,0,0.2);
-     width:80vw;
+/* Page heading */
+.tt-cardList h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #14B8A6; /* Teal */
+  margin-bottom: 25px;
+  text-transform: uppercase;
 }
 
-.tt-cards #title{
-     color:red;
+/* Individual tutorial card */
+.tt-cards {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 80vw;
+  max-width: 600px;
+  margin: 12px 0;
+  padding: 20px;
+  transition: transform 0.2s ease-in-out;
 }
 
-.tt-cards #description{
-     color:#555;
-     text-align: center;
+.tt-cards:hover {
+  transform: scale(1.015);
 }
 
-.tt-cards #author{
-     color:#777;
+/* Video link */
+.tt-cards a {
+  color: #FBBF24; /* Amber */
+  font-weight: 600;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.tt-cards a:hover {
+  color: #facc15;
+}
+
+/* Tutorial title */
+#title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #14B8A6;
+  margin: 8px 0;
+}
+
+/* Description */
+#description {
+  font-size: 15px;
+  color: #334155;
+  margin-bottom: 10px;
+}
+
+/* Author */
+#author {
+  font-size: 13px;
+  color: #64748b;
+  font-style: italic;
 }

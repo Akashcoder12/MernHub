@@ -1,30 +1,90 @@
-.container{
-   display: flex;
-   flex-direction: column;
-   width: 100%;
-   color:#333;
+/* Global container */
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #1E293B; /* Gunmetal */
+  background-color: #F8FAFC; /* Off-white */
+  font-family: 'Inter', 'Roboto', sans-serif;
+  padding-bottom: 30px;
 }
 
-.hero{
-    background-color:honeydew;
-    width: 100%;
-    text-align: center;
-    padding-bottom:10px;
+/* Hero Section */
+.hero {
+  background-color: #14B8A6; /* Teal */
+  width: 100%;
+  text-align: center;
+  padding: 30px 15px;
+  color: #FFFFFF;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
-.btn{
-    padding: 5px;
-    border:none;
-    background-color:greenyellow;
-    border-radius: 5px;
-    margin:0 10px;
-    cursor: pointer;
-    font-weight: 700;
+.hero h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
 }
 
-
-#mern{
-   padding: 10px;
-   background-color:#f6f6f6;
+.hero h2 span {
+  color: #FBBF24; /* Accent Yellow */
 }
 
+.hero p {
+  font-size: 16px;
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 16px;
+  border: none;
+  background-color: #FBBF24; /* Amber */
+  border-radius: 6px;
+  margin: 6px 10px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #1E293B;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #facc15; /* Slightly darker amber on hover */
+}
+
+/* MERN Features Section */
+#mern {
+  padding: 30px 20px;
+  background-color: #FFFFFF;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#mern h2 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #14B8A6;
+}
+
+#mern ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#mern ul li {
+  font-size: 15px;
+  line-height: 1.8;
+  padding-left: 20px;
+  position: relative;
+}
+
+#mern ul li::before {
+  content: '✅';
+  position: absolute;
+  left: 0;
+}

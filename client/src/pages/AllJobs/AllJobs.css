@@ -1,43 +1,82 @@
-.jobList{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+/* Job List Container */
+.jobList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #F8FAFC; /* Light neutral background */
+  padding: 40px 20px;
+  font-family: 'Inter', 'Roboto', sans-serif;
+  color: #1E293B; /* Gunmetal */
 }
 
-.job-card{
-   width: 80vw;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   background-color: honeydew;
-   margin: 10px 0;
-   border-radius: 5px;
-   box-shadow: 0 1px 2px rgba(0,0,0,0.2);
-   text-align: center;
-   padding: 5px;
+/* Heading */
+.jobList h2 {
+  font-size: 26px;
+  color: #14B8A6; /* Teal */
+  margin-bottom: 30px;
 }
 
-#j-title{
-     color: red;
-
+/* Individual Job Card */
+.job-card {
+  width: 80vw;
+  max-width: 700px;
+  background-color: #FFFFFF; /* Clean white card */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  padding: 20px;
+  margin: 12px 0;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease-in-out;
 }
 
-#j-company{
-    color: blue;
+.job-card:hover {
+  transform: scale(1.015);
 }
 
-#j-location{
-     color:#333;
+/* Job Title */
+#j-title {
+  color: #14B8A6;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 5px;
 }
 
-#j-description{
-    color:#455;
+/* Company Name */
+#j-company {
+  color: #1D3557;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
 }
 
+/* Location */
+#j-location {
+  color: #334155;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
 
-#j-posted_by{
-     color: #666;
+/* Job Type */
+#j-job_type {
+  color: #FBBF24;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Job Description */
+#j-description {
+  color: #4B5563;
+  font-size: 14px;
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+/* Posted By */
+#j-posted_by {
+  color: #64748B;
+  font-size: 13px;
+  font-style: italic;
 }
