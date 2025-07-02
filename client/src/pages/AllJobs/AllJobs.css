@@ -2,10 +2,11 @@
 .jobList {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 100%;
   background-color: #F8FAFC; /* Light neutral background */
-  padding: 40px 20px;
+  padding: 40px 0;
   font-family: 'Inter', 'Roboto', sans-serif;
   color: #1E293B; /* Gunmetal */
 }
