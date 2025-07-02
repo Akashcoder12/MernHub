@@ -1,0 +1,34 @@
+.tt-cardList{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     background-color:greenyellow;
+}
+
+.tt-cards{
+     padding:5px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background-color:honeydew;
+     margin: 10px 0;
+     border-radius: 10px;
+     box-shadow:0 2px 4px rgba(0,0,0,0.2);
+     width:80vw;
+}
+
+.tt-cards #title{
+     color:red;
+}
+
+.tt-cards #description{
+     color:#555;
+     text-align: center;
+}
+
+.tt-cards #author{
+     color:#777;
+}

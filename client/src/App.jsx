@@ -1,35 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react'
+import {Routes,Route, BrowserRouter} from 'react-router-dom';
 
-function App() {
-  const [count, setCount] = useState(0)
+import Navbar from './components/Navbar/Navbar'
+import Blogs from './pages/Blogs/Blogs'
+import Practice from './pages/Practice/Practice'
+import AllJobs from './pages/AllJobs/AllJobs'
+import Dashboard from './pages/Dashboard/Dashboard'
+import Home from './pages/Home/Home';
+import Login from './pages/Login/Login';
+import Register from './pages/Register/Register';
+import Footer from './components/Footer/Footer';
+import AllTutorials from './pages/AllTutorials/AllTutorials';
 
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <BrowserRouter>
+      <Navbar/>
+      <Routes>
+        <Route path='/' element={<Home/>}></Route>
+        <Route path='/login' element={<Login/>}></Route>
+        <Route path='/register' element={<Register/>}></Route>
+        <Route path='/blogs' element={<Blogs/>}></Route>
+        <Route path='/all-tutorials' element={<AllTutorials/>}></Route>
+        <Route path='/practice' element={<Practice/>}></Route>
+        <Route path='/jobs' element={<AllJobs/>}></Route>
+        <Route path='/dashboard' element={<Dashboard/>}></Route>
+      </Routes>
+      <Footer/>
+    </BrowserRouter>
   )
 }
-
-export default App
