@@ -15,7 +15,7 @@ export default function Home() {
          <Link to='/register'>
            <button className='btn'>Join Now</button>
          </Link>
-         <Link to='/tutorials'>
+         <Link to='/all-tutorials'>
             <button className='btn'>Explore Tutorials</button>
          </Link>
          <Link to='/jobs'>
